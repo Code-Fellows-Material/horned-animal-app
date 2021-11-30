@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class HornedBeast extends Component {
 
     constructor(props) {
@@ -20,7 +21,7 @@ class HornedBeast extends Component {
             <div>
                 <h2>{this.props.title}</h2>
                 <img onClick={this.handleClick} src={this.props.src} alt={'photo of ' + this.props.title} title={this.props.title + 'photo'}/>
-                <p> Likes: {this.state.likes}</p>
+                <p> <span id='heart'>{'\u2764'}</span> {this.state.likes} </p>
                 <p>{this.props.description}</p>
             </div>
         )
