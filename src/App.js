@@ -6,6 +6,7 @@ import Footer from './Footer';
 
 
 class App extends Component {
+
   render() {
     return (
       <div>

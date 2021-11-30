@@ -29,11 +29,9 @@ class Main extends Component {
 
   newArray = [];
 
-
-
   render() {
 
-    this.hornedBeastArray.forEach((element, index) => this.newArray.push(<HornedBeast num={index} />))
+    this.hornedBeastArray.forEach( (element, index) => this.newArray.push(<HornedBeast title={element.title} src={element.image_url} description={element.description} key={index}/>))
 
     return (
       <div>     
