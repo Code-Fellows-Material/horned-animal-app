@@ -9,7 +9,8 @@ class HornedBeast extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            likes: 0
+            likes: 0, 
+            selected: false
         }
     }
 
@@ -17,12 +18,17 @@ class HornedBeast extends Component {
         this.setState({
             likes: this.state.likes + 1
         });
+        if(!this.selected){
+            this.setState({
+                selected: true
+            });
+        }
     }
 
     render() {
         return (
             <Card bg='dark'>
-                    <Card.Header>{this.props.title}</Card.Header>
+                    <Card.Header>{!this.state.selected ? this.props.title : 'Good Choice!'}</Card.Header>
                 <Card.Img variant="top" onClick={this.handleClick} src={this.props.src} alt={'photo of ' + this.props.title} title={this.props.title + 'photo'} />
                 <Card.Body>
                     <Card.Text>

@@ -19,6 +19,10 @@ code {
   margin: 40px auto;
 }
 
+.card:hover{
+  border: 2px solid grey;
+}
+
 #heart {
   color: red;
   font-weight: bold;
@@ -48,4 +52,9 @@ code {
 
 #card-footer {
   text-align: end;
+}
+
+
+#footer{
+  margin: 0px 50%;
 }
