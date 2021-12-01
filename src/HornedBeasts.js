@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
-import CardGroup from 'react-bootstrap/CardGroup'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 class HornedBeast extends Component {
 

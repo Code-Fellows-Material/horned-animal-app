@@ -19,9 +19,7 @@ code {
   margin: 40px auto;
 }
 
-.card:hover{
-  border: 2px solid grey;
-}
+
 
 #heart {
   color: red;
@@ -57,4 +55,7 @@ code {
 
 #footer{
   margin: 0px 50%;
+}
+.card:hover{
+  border: 2px solid grey;
 }
