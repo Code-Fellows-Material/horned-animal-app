@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Data from './Data.json'
+import data from './Data.json'
 import HornedBeast from './HornedBeasts'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -12,7 +12,7 @@ class Main extends Component {
       beastData: [],
     }
 
-    Data.forEach( (element, index) => 
+    data.forEach( (element, index) => 
     this.state.beastData.push(
       <Col  xs={4} md={2}>
       <HornedBeast 

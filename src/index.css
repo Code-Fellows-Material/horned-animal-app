@@ -17,6 +17,7 @@ code {
 
 .card {
   margin: 40px auto;
+  height: 40vh;
 }
 
 
@@ -40,9 +41,11 @@ code {
   width: 90%;
   align-self: center;
   margin: 10px;
-
   border-radius: calc(0.25rem - 1px);
+  height: 60%;
+  object-fit: cover;
 }
+
 
 #main-row {
   margin: 0px 3rem;

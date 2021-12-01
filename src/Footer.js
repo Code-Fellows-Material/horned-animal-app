@@ -14,11 +14,8 @@ class Footer extends Component {
 
 handleClick = () => {
   this.setState({
-      likes: this.state.likes + 1
+      selected: !this.state.selected
   });
-      this.setState({
-          selected: !this.state.selected
-      });
 }
 
   render() {
