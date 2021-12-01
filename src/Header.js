@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
 
 class Header extends Component {
   render() {
     return (
-      <h1>Horned Beast App</h1>
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand> Horned Beast App</Navbar.Brand>
+          </Container>
+        </Navbar>
     )
   }
 }

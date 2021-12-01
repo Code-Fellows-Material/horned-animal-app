@@ -15,10 +15,37 @@ code {
     monospace;
 }
 
-img {
-  max-width: 300px;
-  max-height: 300px;
+.card {
+  margin: 40px auto;
 }
- #heart {
-   color: red;
- }
+
+#heart {
+  color: red;
+  font-weight: bold;
+}
+
+.card-header {
+  letter-spacing: 0.04em;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: bold;
+  color: azure;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+  width: 90%;
+  align-self: center;
+  margin: 10px;
+
+  border-radius: calc(0.25rem - 1px);
+}
+
+#main-row {
+  margin: 0px 3rem;
+}
+
+#card-footer {
+  text-align: end;
+}
