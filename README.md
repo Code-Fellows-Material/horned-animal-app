@@ -52,7 +52,7 @@ Actual time needed to complete: 15m
 
 ### Lab Class 02
 
-#### Number and name of feature: Feature #0: Add/Fix suggestions from PR and modify app to meet todays Lab requirements
+#### Number and name of feature: Feature #0: Add/Fix suggestions from PR and begin modifying app to meet todays Lab requirements
 
 Estimate of time needed to complete: 15m
 
@@ -64,25 +64,17 @@ Actual time needed to complete: 15m
 
 #### Number and name of feature: Feature #1: Display a Modal
 
-Estimate of time needed to complete: 30m
+Estimate of time needed to complete: 2.5hrs
 
-Start time: 3:15pm
+Start time: 3:30pm
 
-Finish time: 4:00pm
+Finish time: 7:00pm
 
-Actual time needed to complete: 45m
+Actual time needed to complete: 3.5hrs
 
-- Mostly caught up trying to figure out how to put a heart next to the likes
+- Caught up a bit again with styling.
 
 
-#### Number and name of feature: Fuzzy search
+#### Number and name of feature: Stretch Goal: Fuzzy search
 
-Estimate of time needed to complete: 15m
-
-Start time: 6:00pm
-
-Finish time: 6:15pm
-
-Actual time needed to complete: 15m
-
-- While not extravagant, I added some interactivity by creating a "selected" state to tell the user "Hi!" on the footer and applaud the user for their good choice on the HB cards.
+- I did not complete the stretch goal for todays assignment, as I took more time than expected on the Modal feature and styling.
