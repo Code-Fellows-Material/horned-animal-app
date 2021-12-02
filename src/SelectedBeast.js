@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
-import Image from "react-bootstrap/Image"
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 
 class SelectedBeast extends Component {
-
   handleClose = () => {
     this.props.close();
   };
@@ -12,12 +11,18 @@ class SelectedBeast extends Component {
   render() {
     // console.log(this.props);
     return (
-      <Modal autoFocus centered size={'lg'} show={this.props.show} onHide={this.handleClose}>
+      <Modal
+        autoFocus
+        centered
+        size={"lg"}
+        show={this.props.show}
+        onHide={this.handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>{this.props.beast.title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body >
-            <Image fluid src={this.props.beast.image_url} rounded />
+        <Modal.Body>
+          <Image fluid src={this.props.beast.image_url} rounded />
           <Modal.Dialog centered scrollable>
             {this.props.beast.description}
           </Modal.Dialog>
