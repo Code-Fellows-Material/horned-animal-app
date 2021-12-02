@@ -1,35 +1,28 @@
-import React, { Component } from 'react'
-import Data from './Data.json'
-import HornedBeast from './HornedBeasts'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React, { Component } from "react";
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import HornedBeast from "./HornedBeasts";
 
 class Main extends Component {
-  
   constructor(props) {
     super(props);
-    this.state = {
-      beastData: [],
-    }
-
-    Data.forEach( (element, index) => 
-    this.state.beastData.push(
-      <Col  xs={4} md={2}>
-      <HornedBeast 
-      title={element.title} 
-      src={element.image_url} 
-      description={element.description} 
-      key={index}/>
-    </Col>
-      ));
   }
 
   render() {
     return (
-      <Row id='main-row'>
-        {this.state.beastData}
-      </Row>
-    )
+      <Container fluid id="main-container">
+        <Row sm={1} md={2} lg={3} xl={4}>
+          {this.props.data.map((beast, index) => (
+            <HornedBeast
+              openSelected={this.props.openSelected}
+              setSelectedBeast={this.props.setSelectedBeast}
+              beast={beast}
+              key={index}
+            />
+          ))}
+        </Row>
+      </Container>
+    );
   }
 }
 

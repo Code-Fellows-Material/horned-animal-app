@@ -1,8 +1,8 @@
 # Horned Animal React App
 
-## Created for Code Fellows 301 Class
+### Created for Code Fellows 301 Class
 
-### Lab Class 02
+## Lab Class 02
 
 #### Number and name of feature: Feature #1: Display images
 
@@ -49,3 +49,32 @@ Finish time: 6:15pm
 Actual time needed to complete: 15m
 
 - While not extravagant, I added some interactivity by creating a "selected" state to tell the user "Hi!" on the footer and applaud the user for their good choice on the HB cards.
+
+## Lab Class 03
+
+#### Number and name of feature: Feature #0: Add/Fix suggestions from PR and begin modifying app to meet todays Lab requirements
+
+Estimate of time needed to complete: 15m
+
+Start time: 3:00pm
+
+Finish time: 3:15pm
+
+Actual time needed to complete: 15m
+
+#### Number and name of feature: Feature #1: Display a Modal
+
+Estimate of time needed to complete: 2.5hrs
+
+Start time: 3:30pm
+
+Finish time: 7:00pm
+
+Actual time needed to complete: 3.5hrs
+
+- Caught up a bit again with styling.
+
+
+#### Number and name of feature: Stretch Goal: Fuzzy search
+
+- I did not complete the stretch goal for todays assignment, as I took more time than expected on the Modal feature and styling.
