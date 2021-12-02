@@ -7,7 +7,7 @@ class Header extends Component {
     return (
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand> Horned Beast App</Navbar.Brand>
+            <Navbar.Brand>Gallery Of Horns</Navbar.Brand>
           </Container>
         </Navbar>
     )

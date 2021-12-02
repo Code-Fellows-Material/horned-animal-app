@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap//Button';
 import React, { Component } from 'react'
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card'
@@ -8,7 +9,6 @@ class HornedBeast extends Component {
         super(props);
         this.state = {
             likes: 0, 
-            selected: false
         }
     }
 
@@ -16,23 +16,23 @@ class HornedBeast extends Component {
         this.setState({
             likes: this.state.likes + 1
         });
-        if(!this.selected){
-            this.setState({
-                selected: true
-            });
-        }
+    }
+
+    handleOpen = () => {
+        this.props.setSelectedBeast(this.props.beast);
+        this.props.openSelected();
     }
 
     render() {
         return (
             <Container>
                 <Card bg='dark'  className='mt-5'>
-                        <Card.Header>{!this.state.selected ? this.props.beast.title : 'Good Choice!'}</Card.Header>
+                        <Card.Header>{this.props.beast.title}</Card.Header>
                     <Card.Img variant="top" onClick={this.handleClick} src={this.props.beast.image_url} alt={'photo of ' + this.props.beast.title} title={this.props.beast.title + 'photo'} />
                     <Card.Body>
-                        <Card.Text>
-                            {this.props.beast.description}
-                        </Card.Text>
+                        <Button onClick={this.handleOpen} variant="primary" size="lg">
+                            Learn More
+                        </Button>
                     </Card.Body> 
                     <Card.Footer id='card-footer'>
                         <span id='heart'>{'\u2764'}</span> {this.state.likes}

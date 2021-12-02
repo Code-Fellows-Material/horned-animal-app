@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
-  color: azure;
   /* add grey and white to make it easier to look at  */
 }
 
@@ -22,14 +21,12 @@ code {
   max-height: 400px;
 }
 
-
-
 #heart {
   color: red;
   font-weight: bold;
 }
 
-#main-container{
+#main-container {
   padding: 0 2%;
 }
 
@@ -41,6 +38,14 @@ code {
   color: azure;
 }
 
+.card-body {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 6px;
+}
+
 .card-img,
 .card-img-bottom,
 .card-img-top {
@@ -49,19 +54,36 @@ code {
   margin: 10px;
   border-radius: calc(0.25rem - 1px);
   height: 60%;
-  max-height: 180px;
+  max-height: 200px;
   object-fit: cover;
 }
 
-
 #card-footer {
   text-align: end;
+  color: aliceblue;
 }
 
-
-#footer{
+#footer {
   margin: 0px 50%;
 }
-.card:hover{
+.card:hover {
   border: 2px solid grey;
+}
+
+#selected-image {
+  width: 60%;
+  height: 60%;
+}
+
+.modal-content {
+  padding: 10px;
+  background-color: azure;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.navbar-brand{
+  font-size: 2em;
 }

@@ -1,24 +1,42 @@
 import './App.css';
 import React, { Component } from 'react'
 import data from './Data.json'
-import Header from './Header';
-import Footer from './Footer';
-import Row from 'react-bootstrap/Row';
-import HornedBeast from './HornedBeasts'
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Header from './Header'
+import Footer from './Footer'
+import Main from './Main';
+import SelectedBeast from './SelectedBeast';
 
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+        selectedBeast: {},
+        show: false
+    }
+  }
+
+  setSelectedBeast = (beast) => {
+    this.setState({ selectedBeast: beast})
+  }
+
+  open = () => {
+    this.setState({ show: true })
+  }
+
+  close = () => {
+    this.setState({ show: false })
+  }
+
   render() {
+    console.log(this.state.selectedBeast);
     return (
       <Container fluid>
         <Header />
-          <Container fluid id='main-container'>
-            <Row sm={1} md={2} lg={3} xl={4}>
-              {data.map(beast => <HornedBeast beast={beast}/>)}
-            </Row>
-          </Container>
+        <SelectedBeast beast={this.state.selectedBeast} close={this.close} show={this.state.show}/>
+        <Main openSelected={this.open} setSelectedBeast={this.setSelectedBeast} data={data}/>
         <Footer />
       </Container>
     )
