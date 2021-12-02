@@ -16,8 +16,10 @@ code {
 }
 
 .card {
-  margin: 40px auto;
+  margin: 2% 2%;
   height: 40vh;
+  min-height: 400px;
+  max-height: 400px;
 }
 
 
@@ -25,6 +27,10 @@ code {
 #heart {
   color: red;
   font-weight: bold;
+}
+
+#main-container{
+  padding: 0 2%;
 }
 
 .card-header {
@@ -43,13 +49,10 @@ code {
   margin: 10px;
   border-radius: calc(0.25rem - 1px);
   height: 60%;
+  max-height: 180px;
   object-fit: cover;
 }
 
-
-#main-row {
-  margin: 0px 3rem;
-}
 
 #card-footer {
   text-align: end;
