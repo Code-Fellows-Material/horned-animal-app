@@ -10,6 +10,7 @@ body {
   /* add grey and white to make it easier to look at  */
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -25,10 +26,6 @@ code {
 #heart {
   color: red;
   font-weight: bold;
-}
-
-#main-container {
-  padding: 0 2%;
 }
 
 .card-header {
@@ -89,11 +86,26 @@ code {
   font-size: 2em;
 }
 
-/* #HornSelector {
-  margin-top: 20px;
-  width: 35%;
-} */
+#HornSelector {
+  margin-top: 30px;
+  width: 50%;
+}
 
-/* #footer{
-  align-self: baseline;
-} */
+#app-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer{
+  justify-self: end;
+}
+
+#main-container {
+  padding: 0 2%;
+}
+
+#content{
+  flex-grow: 4;
+}

@@ -30,18 +30,20 @@ class App extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container id="app-container" fluid>
         <Header />
-        <SelectedBeast
-          beast={this.state.selectedBeast}
-          close={this.close}
-          show={this.state.show}
-        />
-        <Main
-          openSelected={this.open}
-          setSelectedBeast={this.setSelectedBeast}
-          data={data}
-        />
+        <div id="content">
+          <SelectedBeast
+            beast={this.state.selectedBeast}
+            close={this.close}
+            show={this.state.show}
+          />
+          <Main
+            openSelected={this.open}
+            setSelectedBeast={this.setSelectedBeast}
+            data={data}
+          />
+        </div>
         <Footer id="footer" />
       </Container>
     );
