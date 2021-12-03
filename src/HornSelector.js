@@ -9,7 +9,7 @@ class HornSelector extends Component {
         <div>
             <Container id="HornSelector">
             <Form.Select onChange={(e) => this.props.setNumHorns(e.target.value)} aria-label="Default select example">
-                <option >Horn Selection</option>
+                <option value="ALL" >Horn Selection</option>
                 <option value="ALL">Show All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
