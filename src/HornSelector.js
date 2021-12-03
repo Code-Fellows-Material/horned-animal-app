@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Form from "react-bootstrap/Form"
 import Container from "react-bootstrap/Container";
 
-export class HornSelector extends Component {
+class HornSelector extends Component {
 
     render() {
         return (
