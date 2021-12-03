@@ -6,8 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
+  height: 100%;
   /* add grey and white to make it easier to look at  */
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -24,10 +26,6 @@ code {
 #heart {
   color: red;
   font-weight: bold;
-}
-
-#main-container {
-  padding: 0 2%;
 }
 
 .card-header {
@@ -86,4 +84,28 @@ code {
 
 .navbar-brand{
   font-size: 2em;
+}
+
+#HornSelector {
+  margin-top: 30px;
+  width: 50%;
+}
+
+#app-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer{
+  justify-self: end;
+}
+
+#main-container {
+  padding: 0 2%;
+}
+
+#content{
+  flex-grow: 4;
 }

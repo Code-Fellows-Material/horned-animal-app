@@ -29,21 +29,22 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.selectedBeast);
     return (
-      <Container fluid>
+      <Container id="app-container" fluid>
         <Header />
-        <SelectedBeast
-          beast={this.state.selectedBeast}
-          close={this.close}
-          show={this.state.show}
-        />
-        <Main
-          openSelected={this.open}
-          setSelectedBeast={this.setSelectedBeast}
-          data={data}
-        />
-        <Footer />
+        <div id="content">
+          <SelectedBeast
+            beast={this.state.selectedBeast}
+            close={this.close}
+            show={this.state.show}
+          />
+          <Main
+            openSelected={this.open}
+            setSelectedBeast={this.setSelectedBeast}
+            data={data}
+          />
+        </div>
+        <Footer id="footer" />
       </Container>
     );
   }
