@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
+  height: 100%;
   /* add grey and white to make it easier to look at  */
 }
 
@@ -87,3 +88,12 @@ code {
 .navbar-brand{
   font-size: 2em;
 }
+
+/* #HornSelector {
+  margin-top: 20px;
+  width: 35%;
+} */
+
+/* #footer{
+  align-self: baseline;
+} */

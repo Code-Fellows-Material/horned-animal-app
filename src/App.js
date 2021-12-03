@@ -29,7 +29,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.selectedBeast);
     return (
       <Container fluid>
         <Header />
@@ -43,7 +42,7 @@ class App extends Component {
           setSelectedBeast={this.setSelectedBeast}
           data={data}
         />
-        <Footer />
+        <Footer id="footer" />
       </Container>
     );
   }
