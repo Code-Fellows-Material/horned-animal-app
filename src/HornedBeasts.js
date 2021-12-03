@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 
 class HornedBeast extends Component {
